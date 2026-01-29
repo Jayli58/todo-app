@@ -8,6 +8,11 @@ This repository is the central hub for the Todo application.
 - Infrastructure (CDK): https://github.com/Jayli58/todo-app-infra
 
 ## Architecture
+Authentication:
+User authentication and authorization are handled via Amazon Cognito,
+with the frontend integrating Cognito-hosted authentication and the backend
+secured using JWT validation.
+
 Client flow:
 React → API Gateway → Lambda → DynamoDB
 
