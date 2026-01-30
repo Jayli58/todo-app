@@ -9,6 +9,7 @@ This repository is the central hub for the Todo application.
 
 ## Architecture
 Frontend hosting: S3 + CloudFront
+
 Backend: API Gateway + Lambda
 
 Authentication:
