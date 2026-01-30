@@ -8,6 +8,9 @@ This repository is the central hub for the Todo application.
 - Infrastructure (CDK): https://github.com/Jayli58/todo-app-infra
 
 ## Architecture
+Frontend hosting: S3 + CloudFront
+Backend: API Gateway + Lambda
+
 Authentication:
 User authentication and authorization are handled via Amazon Cognito,
 with the frontend integrating Cognito-hosted authentication and the backend
@@ -25,5 +28,8 @@ event-driven processing for scheduled reminders.
 Deployed using AWS CDK.
 
 ## CI/CD
-- Frontend pipeline: S3 + CloudFront
-- Backend pipeline: Lambda + API Gateway
+Frontend pipeline: 
+GitHub Actions builds artifact, clears S3, uploads to S3, invalidates CloudFront cache.
+
+Backend pipeline: 
+GitHub Actions uploads artifacts to S3; S3 overwrite triggers CodePipeline to deploy TodoApiStack and ReminderStack.
