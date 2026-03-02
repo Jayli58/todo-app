@@ -4,8 +4,8 @@ Todo App is a serverless, mobile-friendly task manager with Cognito-backed authe
 
 <table>
   <tr>
-    <td><img src="../todo-app-screenshot-1.png" alt="@todo-app-screenshot-1.png" width="320" /></td>
-    <td><img src="../todo-app-screenshot-2.png" alt="@todo-app-screenshot-2.png" width="320" /></td>
+    <td><img src="./todo-app-screenshot-1.png" alt="@todo-app-screenshot-1.png" width="320" /></td>
+    <td><img src="./todo-app-screenshot-2.png" alt="@todo-app-screenshot-2.png" width="320" /></td>
   </tr>
 </table>
 
